@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">skippingTheAppIconForNow</string>
+    <string name="radioButtonClick">clicked :D</string>
+    <string name="hello_zach_m">hello zach m :)</string>
+    <string name="increment">increment</string>
+    <string name="decrement">decrement</string>
+</resources>
