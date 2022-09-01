@@ -43,4 +43,74 @@
         app:layout_constraintBottom_toTopOf="@id/greeting_textview"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/input_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/increment_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="type name in input field"/>
+
+    <EditText
+        android:id="@+id/input_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input_textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="type name here"
+        android:inputType="text"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/inputConfirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input_field"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="confirm"
+        android:onClick="inputConfirmed"/>
+
+    <TextView
+        android:id="@+id/solarSystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/just_a_little_guy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Mercury"/>
+
+    <RadioGroup
+        android:id="@+id/upOrDownGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/solarSystem"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <RadioButton
+            android:id="@+id/further"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="further"
+            android:onClick="toggleFurther"/>
+        <RadioButton
+            android:id="@+id/closer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="closer"
+            android:onClick="toggleCloser"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cycleSolarSystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/upOrDownGroup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="cycle"
+        android:onClick="cycleSolarSystem"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
